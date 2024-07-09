@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dewmar3D - Amar Firdaus</title>
+    <link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/transitions.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-transition">
+    <header>
+        <nav>
+            <a href="index.html" class="logo">dewmar<span>3d</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ABOUT.html">About</a></li>
+                <li><a href="PORTFOLIO.html">Portfolio</a></li>
+                <li><a href="#contact-form">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/amar.firdaus.566" target="_blank"><img src="gambar/facebook-app-symbol.png" alt="Facebook"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="gambar/121509.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/dewmar3d/" target="_blank"><img src="gambar/instagram (3).png" alt="Instagram"></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <div class="tabs">
+                <a href="DESIGNS.html" class="tab">Designs</a>
+                <a href="ANIMATIONS.html" class="tab active">Animations</a>
+                <a href="ARTS.html" class="tab">Arts</a>
+            </div>
+            <h1>Portfolio</h1>
+            <h2>Animations</h2>
+        </section>
+        
+        <section class="portfolio-section">
+            <h2>Photorealism</h2>
+            <div class="portfolio-items">
+                <video src="gambar/photorealism/Snapinsta.app_video_An_UfRpRMrclGQOvbqiY5Ugypp9CoKRbuleeqK6hPgB2Qw7NggD8zZCswd3ZVMbJVamR1PtKXoDAPGTRlZlUW2Ac.mp4" controls></video>
+                <video src="gambar/photorealism/Snapinsta.app_video_An9RLAKTOMzV3IB4jZpM_fPeuu9z-sH1_4zgRbOoQTxPLL7EeWZjWwpx-P7YYVC33ZU2IYf0RbFRX01mmuOL2ttF.mp4" controls></video>
+            </div>
+        </section>
+    
+        <section class="logo-section">
+            <h2>Motion Graphics</h2>
+            <div class="logo-items">
+                <video src="gambar/motiongraphics/PRIME.mp4" controls></video>
+                <video src="gambar/motiongraphics/RV.mp4" controls></video>
+                <video src="../ONLINE~1/gambar/MOTION~1/-TRYIN~1.MP4" controls></video>
+                <video src="gambar/motiongraphics/maf.mp4" controls></video>
+				<video src="gambar/motiongraphics/MONSTER ENERGY PRODUCT ADVERTISEMENT - MUHAMMAD AMAR FIRDAUS BIN CHAIRIL ANWAR (2023891686) (1).mp4" controls></video>
+                <video src="gambar/motiongraphics/MUHAMMAD AMAR FIRDAUS BIN CHAIRIL ANWAR (2023891686) (1).mp4" controls></video>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <h2>Contact Me <span>and let's talk!</span></h2>
+        <div class="contact-info">
+            <p><a href="mailto:amarfirdausca@gmail.com">amarfirdausca@gmail.com</a></p>
+            <p><a href="tel:0182891171">018-289 1171</a></p>
+        </div>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="footer-social-icons">
+            <a href="https://www.facebook.com/amar.firdaus.566" target="_blank"><img src="gambar/facebook-app-symbol.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="gambar/121509.png" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/dewmar3d/" target="_blank"><img src="gambar/instagram (3).png" alt="Instagram"></a>
+            <a href="mailto:amarfirdausca@gmail.com"><img src="gambar/email-confirmation-app-icon-email-icon-free-png.png" alt="Email"></a>
+        </div>
+        <p>Copyright © 2024 by <span>Amar Firdaus</span></p>
+    </footer>
+	<script src="js/transitions.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const videos = document.querySelectorAll('video');
+
+            videos.forEach(video => {
+                video.addEventListener('mouseover', () => {
+                    video.play();
+                });
+
+                video.addEventListener('mouseout', () => {
+                    video.pause();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

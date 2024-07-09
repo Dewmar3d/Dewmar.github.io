@@ -1,0 +1,9 @@
+/* Fade-in and fade-out transition effect */
+.page-transition {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Adjusted for quicker transition */
+}
+
+.page-transition-active {
+    opacity: 1;
+}
